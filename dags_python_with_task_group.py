@@ -30,5 +30,8 @@ with DAG (
 
         inner_func1() >> inner_function2
 
+    with TaskGroup(group_id="second_group", tooltip="두 번째 그룹입니다.") as group_2:
+        
+
 
 
