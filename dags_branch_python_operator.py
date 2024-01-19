@@ -13,7 +13,7 @@ with DAG(
     
     def select_random():
         import random
-
+        
         item_list = ['A', 'B', 'C']
         select_item = random.choice(item_list)
 
