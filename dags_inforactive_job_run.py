@@ -14,7 +14,7 @@ with DAG(
 
     job_run = BashOperator(
         task_id="job_run",
-        bash_command="{{var.value.job_root_path}}" + file_path + ' --context=DEV &&'
+        bash_command="{{var.value.job_root_path}}" + file_path + ' &&'
         'echo SUCCESS'
     )
 
