@@ -13,7 +13,7 @@ with DAG(
     
     def select_random():
         import random
-        
+
         item_list = ['A', 'B', 'C']
         select_item = random.choice(item_list)
 
@@ -46,7 +46,6 @@ with DAG(
         task_id="task_c",
         python_callable=common_func,
         op_kwargs={"selected" : "C"}
-    ) 
-
+    )
 
     python_branch_task >> [task_a, task_b, task_c]
