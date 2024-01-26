@@ -27,6 +27,9 @@ with DAG(
         else:
             return "send_fail_email_task"
 
+
+
+
     send_success_email_task = EmailOperator(
         task_id = 'send_success_email_task',
         to='kjhkjh900@naver.com',
